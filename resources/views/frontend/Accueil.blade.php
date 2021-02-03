@@ -18,116 +18,101 @@
     
 </head>
 
-<body class="is-preload">
-
-    <!-- Wrapperrrr -->
-    <div id="wrapper">
-
-      <!-- Main -->
-        <div id="main">
-          <div class="inner">
-
-            <!-- Header -->
-            <header id="header">
-              <div class="logo">
-                <a href="index.html">Ramayana</a>
-              </div>
-            </header>
-
+<body>
+  
+  <div class="area"></div><nav class="main-menu">
+    <ul>
+        <li>
+            <a href="http://justinfarrow.com">
+                <i class="fa fa-home fa-2x"></i>
+                <span class="nav-text">
+                    Dashboard
+                </span>
+            </a>
+          
+        </li>
+        <li class="has-subnav">
+            <a href="#">
+                <i class="fa fa-laptop fa-2x"></i>
+                <span class="nav-text">
+                    Stars Components
+                </span>
+            </a>
             
+        </li>
+        <li class="has-subnav">
+            <a href="#">
+               <i class="fa fa-list fa-2x"></i>
+                <span class="nav-text">
+                    Forms
+                </span>
+            </a>
             
+        </li>
+        <li class="has-subnav">
+            <a href="#">
+               <i class="fa fa-folder-open fa-2x"></i>
+                <span class="nav-text">
+                    Pages
+                </span>
+            </a>
+           
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-bar-chart-o fa-2x"></i>
+                <span class="nav-text">
+                    Graphs and Statistics
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-font fa-2x"></i>
+                <span class="nav-text">
+                   Quotes
+                </span>
+            </a>
+        </li>
+        <li>
+           <a href="#">
+               <i class="fa fa-table fa-2x"></i>
+                <span class="nav-text">
+                    Tables
+                </span>
+            </a>
+        </li>
+        <li>
+           <a href="#">
+                <i class="fa fa-map-marker fa-2x"></i>
+                <span class="nav-text">
+                    Maps
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+               <i class="fa fa-info fa-2x"></i>
+                <span class="nav-text">
+                    Documentation
+                </span>
+            </a>
+        </li>
+    </ul>
 
-          </div>
-        </div>
+    <ul class="logout">
+        <li>
+           <a href="#">
+                 <i class="fa fa-power-off fa-2x"></i>
+                <span class="nav-text">
+                    Logout
+                </span>
+            </a>
+        </li>  
+    </ul>
+</nav>
 
-      <!-- Sidebar -->
-        <div id="sidebar">
-
-          <div class="inner">
-
-            <!-- Search Box -->
-            <section id="search" class="alt">
-              <form method="get" action="#">
-                <input type="text" name="search" id="search" placeholder="Search..." />
-              </form>
-            </section>
-              
-            <!-- Menu -->
-            <nav id="menu">
-              <ul>
-                <li><a href="index.html">Homepage</a></li>
-                <li><a href="simple_page.html">Simple Page</a></li>
-                <li><a href="shortcodes.html">Shortcodes</a></li>
-                <li>
-                  <span class="opener">Dropdown One</span>
-                  <ul>
-                    <li><a href="#">First Sub Menu</a></li>
-                    <li><a href="#">Second Sub Menu</a></li>
-                    <li><a href="#">Third Sub Menu</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <span class="opener">Dropdown Two</span>
-                  <ul>
-                    <li><a href="#">Sub Menu #1</a></li>
-                    <li><a href="#">Sub Menu #2</a></li>
-                    <li><a href="#">Sub Menu #3</a></li>
-                  </ul>
-                </li>
-                <li><a href="https://www.google.com">External Link</a></li>
-              </ul>
-            </nav>
-
-            <!-- Featured Posts -->
-            <div class="featured-posts">
-              <div class="heading">
-                <h2>Featured Posts</h2>
-              </div>
-              <div class="owl-carousel owl-theme">
-                <a href="#">
-                  <div class="featured-item">
-                    <img src="{{asset('images/featured_post_01.jpg')}}" alt="featured one">
-                    <p>Aliquam egestas convallis eros sed gravida. Curabitur consequat sit.</p>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="featured-item">
-                    <img src="{{asset('images/featured_post_01.jpg')}}" alt="featured one">
-                    <p>Donec a scelerisque massa. Aliquam non iaculis quam. Duis arcu turpis.</p>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="featured-item">
-                    <img src="{{asset('images/featured_post_01.jpg')}}" alt="featured one">
-                    <p>Suspendisse ac convallis urna, vitae luctus ante. Donec sit amet.</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <!-- Footer -->
-            <footer id="footer">
-              <p class="copyright">Copyright &copy; 2019 Company Name
-              <br>Designed by <a rel="nofollow" href="https://www.facebook.com/templatemo">Template Mo</a></p>
-            </footer>
-
-          </div>
-        </div>
-
-    </div>
-
-  <!-- Scripts -->
-  <!-- Bootstrap core JavaScript -->
-    <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
-    <script src="{{asset('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-
-    <script src="{{asset('js/browser.min.js')}}"></script>
-    <script src="{{asset('js/breakpoints.min.js')}}"></script>
-    <script src="{{asset('js/transition.js')}}"></script>
-    <script src="{{asset('js/owl-carousel.js')}}"></script>
-    <script src="{{asset('js/custom.js')}}"></script>
     <script src="{{asset('js/app.js')}}"></script>
-</body>
 </body>
 
 

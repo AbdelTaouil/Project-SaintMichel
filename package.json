@@ -21,6 +21,7 @@
     "sass": "^1.20.1",
     "sass-loader": "^8.0.0",
     "vue": "^2.5.17",
+    "vue-loader": "^15.9.6",
     "vue-template-compiler": "^2.6.10"
   },
   "name": "Project-SaintMichel",
@@ -30,7 +31,9 @@
   "directories": {
     "test": "tests"
   },
-  "dependencies": {},
+  "dependencies": {
+    "updates": "^11.4.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AbdelTaouil/Project-SaintMichel.git"
