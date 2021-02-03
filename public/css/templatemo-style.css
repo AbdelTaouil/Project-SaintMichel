@@ -998,7 +998,6 @@ section.buttons .container-fluid {
 #sidebar .toggle:before {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
     text-transform: none !important;
@@ -1293,7 +1292,6 @@ section.buttons .container-fluid {
 #menu ul span.opener:before {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
     text-transform: none !important;
