@@ -1,9 +1,10 @@
 <?php
 
+use App\Http\Controllers\InterventionController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfilController;
-
+use App\Http\Controllers\SalleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,7 +28,28 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 
-// Profil
 
-Route::resource("/profil", ProfilController::class);    
+
+// backend
+
+    // Profil
+
+        Route::get("/profil", [ProfilController::class, 'index']);  
+
+    // Liste utilisateur
+
+        Route::get("/liste-utilisateur", [ProfilController::class, 'index2']);    
+
+    // Liste salle
+
+        Route::get("/liste-salle", [SalleController::class, "index"]);    
+
+    // Intervention
+
+        Route::get("/demande", [InterventionController::class,'index']);
+
+        Route::get("/personnel", [InterventionController::class,'index2']);
+
+        Route::get("/reunion", [InterventionController::class,'index3']);
+
 

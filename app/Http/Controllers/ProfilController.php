@@ -20,6 +20,15 @@ class ProfilController extends Controller
         return view('backend.profil', compact('user'));
     }
 
+    public function index2()
+    {
+        $user =  User::all();
+        $counter = 1;
+
+        return view('backend.liste-utilisateur', compact('user','counter'));
+    }
+
+
     /**
      * Show the form for creating a new resource.
      *

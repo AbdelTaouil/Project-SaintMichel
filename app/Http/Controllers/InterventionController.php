@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Salle;
+use App\Models\Intervention;
 use Illuminate\Http\Request;
 
-class SalleController extends Controller
+class InterventionController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,10 +14,21 @@ class SalleController extends Controller
      */
     public function index()
     {
-      
 
-        return view('backend.liste-salle');
+        return view('backend.intervention.demande');
     }
+    public function index2()
+    {
+
+        return view('backend.intervention.personnel');
+    }
+
+    public function index3()
+    {
+
+        return view('backend.intervention.reunion');
+    }
+
 
     /**
      * Show the form for creating a new resource.
@@ -43,10 +54,10 @@ class SalleController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Salle  $salle
+     * @param  \App\Models\Intervention  $intervention
      * @return \Illuminate\Http\Response
      */
-    public function show(Salle $salle)
+    public function show(Intervention $intervention)
     {
         //
     }
@@ -54,10 +65,10 @@ class SalleController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Salle  $salle
+     * @param  \App\Models\Intervention  $intervention
      * @return \Illuminate\Http\Response
      */
-    public function edit(Salle $salle)
+    public function edit(Intervention $intervention)
     {
         //
     }
@@ -66,10 +77,10 @@ class SalleController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Salle  $salle
+     * @param  \App\Models\Intervention  $intervention
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Salle $salle)
+    public function update(Request $request, Intervention $intervention)
     {
         //
     }
@@ -77,10 +88,10 @@ class SalleController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Salle  $salle
+     * @param  \App\Models\Intervention  $intervention
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Salle $salle)
+    public function destroy(Intervention $intervention)
     {
         //
     }

@@ -249,12 +249,12 @@ return [
         ],
         [
             'text' => 'Liste des utilisateurs',
-            'url'  => '/utilisateur',
+            'url'  => '/liste-utilisateur',
             'icon' => 'fas fa-users',
         ],
         [
             'text' => 'Liste des salles',
-            'url'  => '/salles',
+            'url'  => '/liste-salle',
             'icon' => 'fas fa-door-open',
         ],
         [
@@ -264,12 +264,17 @@ return [
                 [
                     'text' => 'Réunion',
                     'url'  => '/reunion',
-                    'icon' => 'far fa-handshake',
+                    'icon_color' => 'blue',
                 ],
                 [
-                    'text' => 'Projet',
-                    'url'  => '/image',
-                    'icon' => 'fas fa-fw fa-user',
+                    'text' => 'Nouvelle Demande',
+                    'url'  => '/demande',
+                    'icon_color' => 'green',
+                ],
+                [
+                    'text' => 'Demande personnel',
+                    'url'  => '/personnel',
+                    'icon_color' => 'green',
                 ],
             ],
         ],
