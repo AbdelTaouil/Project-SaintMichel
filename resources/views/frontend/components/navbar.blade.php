@@ -1,92 +1,109 @@
-<div id="sidebar" class="">
 
-    <div class="inner">
-
-      <!-- Search Box -->
-      <section id="search" class="alt">
-        <form method="get" action="#">
-          <input type="text" name="search" id="search" placeholder="Search...">
-        </form>
-      </section>
-        
-      <!-- Menu -->
-      <nav id="menu">
-        <ul>
-          <li><a href="index.html">Homepage</a></li>
-          <li><a href="simple_page.html">Simple Page</a></li>
-          <li><a href="shortcodes.html">Shortcodes</a></li>
-          <li>
-            <span class="opener">Dropdown One</span>
-            <ul>
-              <li><a href="#">First Sub Menu</a></li>
-              <li><a href="#">Second Sub Menu</a></li>
-              <li><a href="#">Third Sub Menu</a></li>
-            </ul>
-          </li>
-          <li>
-            <span class="opener">Dropdown Two</span>
-            <ul>
-              <li><a href="#">Sub Menu #1</a></li>
-              <li><a href="#">Sub Menu #2</a></li>
-              <li><a href="#">Sub Menu #3</a></li>
-            </ul>
-          </li>
-          <li><a href="https://www.google.com">External Link</a></li>
-        </ul>
-      </nav>
-
-      <!-- Featured Posts -->
-      <div class="featured-posts">
-        <div class="heading">
-          <h2>Featured Posts</h2>
-        </div>
-        <div class="owl-carousel owl-theme owl-loaded owl-drag">
+  <nav class="main-menu ">
+    <ul>
+        <li>
+            <a href="/">
+                <i class="fa fa-home fa-2x"></i>
+                <span class="nav-text">
+                    Accueil
+                </span>
+            </a>
           
-          
-          
-        <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-700px, 0px, 0px); transition: all 0s ease 0s; width: 2450px;"><div class="owl-item cloned" style="width: 320px; margin-right: 30px;"><a href="#">
-            <div class="featured-item">
-              <img src="assets/images/featured_post_01.jpg" alt="featured two">
-              <p>Donec a scelerisque massa. Aliquam non iaculis quam. Duis arcu turpis.</p>
-            </div>
-          </a></div><div class="owl-item cloned" style="width: 320px; margin-right: 30px;"><a href="#">
-            <div class="featured-item">
-              <img src="assets/images/featured_post_01.jpg" alt="featured three">
-              <p>Suspendisse ac convallis urna, vitae luctus ante. Donec sit amet.</p>
-            </div>
-          </a></div><div class="owl-item active" style="width: 320px; margin-right: 30px;"><a href="#">
-            <div class="featured-item">
-              <img src="assets/images/featured_post_01.jpg" alt="featured one">
-              <p>Aliquam egestas convallis eros sed gravida. Curabitur consequat sit.</p>
-            </div>
-          </a></div><div class="owl-item" style="width: 320px; margin-right: 30px;"><a href="#">
-            <div class="featured-item">
-              <img src="assets/images/featured_post_01.jpg" alt="featured two">
-              <p>Donec a scelerisque massa. Aliquam non iaculis quam. Duis arcu turpis.</p>
-            </div>
-          </a></div><div class="owl-item" style="width: 320px; margin-right: 30px;"><a href="#">
-            <div class="featured-item">
-              <img src="assets/images/featured_post_01.jpg" alt="featured three">
-              <p>Suspendisse ac convallis urna, vitae luctus ante. Donec sit amet.</p>
-            </div>
-          </a></div><div class="owl-item cloned" style="width: 320px; margin-right: 30px;"><a href="#">
-            <div class="featured-item">
-              <img src="assets/images/featured_post_01.jpg" alt="featured one">
-              <p>Aliquam egestas convallis eros sed gravida. Curabitur consequat sit.</p>
-            </div>
-          </a></div><div class="owl-item cloned" style="width: 320px; margin-right: 30px;"><a href="#">
-            <div class="featured-item">
-              <img src="assets/images/featured_post_01.jpg" alt="featured two">
-              <p>Donec a scelerisque massa. Aliquam non iaculis quam. Duis arcu turpis.</p>
-            </div>
-          </a></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots"><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button></div></div>
-      </div>
+        </li>
+        {{-- <li class="has-subnav">
+            <a href="#">
+                <i class="fa fa-laptop fa-2x"></i>
+                <span class="nav-text">
+                    Stars Components
+                </span>
+            </a>
+            
+        </li> --}}
+        <li class="has-subnav">
+            <a href="/intervention">
+               <i class="fa fa-list fa-2x"></i>
+                <span class="nav-text">
+                    Intervention
+                </span>
+            </a>
+            
+        </li>
+        <li class="has-subnav">
+            <a href="/inventaire">
+               <i class="fa fa-folder-open fa-2x"></i>
+                <span class="nav-text">
+                    Inventaire
+                </span>
+            </a>
+           
+        </li>
+        {{-- <li>
+            <a href="#">
+                <i class="fa fa-bar-chart-o fa-2x"></i>
+                <span class="nav-text">
+                    Graphs and Statistics
+                </span>
+            </a>
+        </li> --}}
+        {{-- <li>
+            <a href="#">
+                <i class="fa fa-font fa-2x"></i>
+                <span class="nav-text">
+                   Quotes
+                </span>
+            </a>
+        </li> --}}
+        <li>
+           <a href="/reservation">
+               <i class="fa fa-table fa-2x"></i>
+                <span class="nav-text">
+                  Système de réservation de ressources et salles
+                </span>
+            </a>
+        </li>
+        {{-- <li>
+           <a href="#">
+                <i class="fa fa-map-marker fa-2x"></i>
+                <span class="nav-text">
+                    Maps
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+               <i class="fa fa-info fa-2x"></i>
+                <span class="nav-text">
+                    Documentation
+                </span>
+            </a>
+        </li> --}}
+    </ul>
 
-      <!-- Footer -->
-      <footer id="footer">
-        <p class="copyright">Copyright © 2019 Company Name
-        <br>Designed by <a rel="nofollow" href="https://www.facebook.com/templatemo">Template Mo</a></p>
-      </footer>
+    @if (Route::has('login'))
+                    @auth
+                      <ul class="logout">
+                          <li>
+                            <a href="#">
+                                  <i class="fa fa-power-off fa-2x"></i>
+                                  <span class="nav-text">
+                                      Logout
+                                  </span>
+                              </a>
+                          </li>  
+                      </ul>  
+                    @else
+                      <ul class="logout">
+                        <li>
+                          <a href="{{ route('login') }}">
+                                <i class="fa fa-power-off fa-2x"></i>
+                                <span class="nav-text">
+                                  Login
+                                </span>
+                            </a>
+                        </li>  
+                      </ul>  
 
-    </div>
-  <a href="#sidebar" class="toggle">Toggle</a></div>
+                    @endauth
+            @endif
+   
+</nav>

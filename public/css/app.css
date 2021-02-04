@@ -10970,6 +10970,9 @@ nav.main-menu.expanded {
   background: #212121;
   border-right: 1px solid #e5e5e5;
   position: absolute;
+  display: inline;
+  align-items: center;
+  justify-content: center;
   top: 0;
   bottom: 0;
   height: 100%;
@@ -11072,9 +11075,10 @@ nav.main-menu li.active > a,
 
 .area {
   float: left;
-  background: #e2e2e2;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  padding-left: 60px;
+  background-image: url(/images/hero-bg.png?82c9a3848b1ad6fffcb9f8d53f736e63);
 }
 
 @font-face {
@@ -11082,6 +11086,18 @@ nav.main-menu li.active > a,
   font-style: normal;
   font-weight: 300;
   src: local("Titillium WebLight"), local("TitilliumWeb-Light"), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format("woff");
+}
+
+.row {
+  padding: 80px 0px 0px 0px;
+}
+
+.row h2 {
+  color: orange;
+}
+
+.row img {
+  height: 300px;
 }
 
 

@@ -1,119 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Saint Michel</title>
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+@extends('frontend.template.template')
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+@section('content')
+<section id="hero" class="hero d-flex align-items-center">
 
-    <link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-
-    <link rel="stylesheet" href="{{asset('css/fontawesome.css')}}">
-    <link rel="stylesheet" href="{{asset('css/templatemo-style.css')}}">
-    <link rel="stylesheet" href="{{asset('css/owl.css')}}">
-
-    
-</head>
-
-<body>
-  
-  <div class="area"></div><nav class="main-menu">
-    <ul>
-        <li>
-            <a href="http://justinfarrow.com">
-                <i class="fa fa-home fa-2x"></i>
-                <span class="nav-text">
-                    Dashboard
-                </span>
-            </a>
-          
-        </li>
-        <li class="has-subnav">
-            <a href="#">
-                <i class="fa fa-laptop fa-2x"></i>
-                <span class="nav-text">
-                    Stars Components
-                </span>
-            </a>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up" class="aos-init aos-animate">Plateforme du </h1>
+          <h2 data-aos="fade-up" data-aos-delay="400" class="aos-init aos-animate">College Saint Michel</h2>
+          <div data-aos="fade-up" data-aos-delay="600" class="aos-init aos-animate">
+            @if (Route::has('login'))
+                    @auth
+                      <div class="text-center text-lg-start">
+                        <a href="#about" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                          <span>Bienvenue {{Auth::user()->name}}</span>
+                          <i class="bi bi-arrow-right"></i>
+                        </a>
+                      </div>                    
+                    @else
+                      
+                        <div class="text-center text-lg-start">
+                          <a href="{{ route('login') }}" style="text-decoration:none" class="text-white">
+                            <button class="btn btn-warning text-white ">Se connecter</span>
+                          </a>
+                        </div>
+                    @endauth
+            @endif
             
-        </li>
-        <li class="has-subnav">
-            <a href="#">
-               <i class="fa fa-list fa-2x"></i>
-                <span class="nav-text">
-                    Forms
-                </span>
-            </a>
-            
-        </li>
-        <li class="has-subnav">
-            <a href="#">
-               <i class="fa fa-folder-open fa-2x"></i>
-                <span class="nav-text">
-                    Pages
-                </span>
-            </a>
-           
-        </li>
-        <li>
-            <a href="#">
-                <i class="fa fa-bar-chart-o fa-2x"></i>
-                <span class="nav-text">
-                    Graphs and Statistics
-                </span>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <i class="fa fa-font fa-2x"></i>
-                <span class="nav-text">
-                   Quotes
-                </span>
-            </a>
-        </li>
-        <li>
-           <a href="#">
-               <i class="fa fa-table fa-2x"></i>
-                <span class="nav-text">
-                    Tables
-                </span>
-            </a>
-        </li>
-        <li>
-           <a href="#">
-                <i class="fa fa-map-marker fa-2x"></i>
-                <span class="nav-text">
-                    Maps
-                </span>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-               <i class="fa fa-info fa-2x"></i>
-                <span class="nav-text">
-                    Documentation
-                </span>
-            </a>
-        </li>
-    </ul>
+          </div>
+        </div>
+        <div class="col-lg-6 hero-img aos-init aos-animate" data-aos="zoom-out" data-aos-delay="200">
+          <img src="image/logo.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
 
-    <ul class="logout">
-        <li>
-           <a href="#">
-                 <i class="fa fa-power-off fa-2x"></i>
-                <span class="nav-text">
-                    Logout
-                </span>
-            </a>
-        </li>  
-    </ul>
-</nav>
-
-    <script src="{{asset('js/app.js')}}"></script>
-</body>
-
-
-</html>
+  </section>
+@endsection
