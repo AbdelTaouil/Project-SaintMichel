@@ -258,7 +258,7 @@ return [
             'icon' => 'fas fa-door-open',
         ],
         [
-            'text'    => 'Intervention',
+            'text'    => 'Technique',
             'icon'    => 'fas fa-clipboard-list',
             'submenu' => [
                 [

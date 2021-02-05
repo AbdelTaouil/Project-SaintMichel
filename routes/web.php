@@ -21,6 +21,10 @@ Route::get('/', function () {
     return view('frontend.Accueil');
 });
 
+Route::get('/technique', function () {
+    return view('frontend.technique');
+});
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

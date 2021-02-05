@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateInterventionsTable extends Migration
+class CreateSallesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,12 @@ class CreateInterventionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('interventions', function (Blueprint $table) {
+        Schema::create('salles', function (Blueprint $table) {
             $table->id();
+            $table->string('nom');
+            $table->string('code')->nullable();
+            $table->unsignedBigInteger('intermediaire_id');
+            $table->foreign('intermediaire_id')->references('id')->on('intermediaires');
             $table->timestamps();
         });
     }
@@ -26,6 +30,6 @@ class CreateInterventionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('interventions');
+        Schema::dropIfExists('salles');
     }
 }
