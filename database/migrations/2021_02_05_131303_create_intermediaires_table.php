@@ -16,8 +16,6 @@ class CreateIntermediairesTable extends Migration
         Schema::create('intermediaires', function (Blueprint $table) {
             $table->id();
             $table->string('nom');
-            $table->unsignedBigInteger('etage_id');
-            $table->foreign('etage_id')->references('id')->on('etages');
             $table->timestamps();
         });
     }

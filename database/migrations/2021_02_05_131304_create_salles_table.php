@@ -17,6 +17,10 @@ class CreateSallesTable extends Migration
             $table->id();
             $table->string('nom');
             $table->string('code')->nullable();
+            $table->unsignedBigInteger('batiment_id');
+            $table->foreign('batiment_id')->references('id')->on('batiments');
+            $table->unsignedBigInteger('etage_id');
+            $table->foreign('etage_id')->references('id')->on('etages');
             $table->unsignedBigInteger('intermediaire_id');
             $table->foreign('intermediaire_id')->references('id')->on('intermediaires');
             $table->timestamps();
