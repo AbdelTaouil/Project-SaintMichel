@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
             BatimentSeeder::class,
             EtageSeeder::class,
             IntermediaireSeeder::class,
+            SalleSeeder::class,
         ]);
     }
 }

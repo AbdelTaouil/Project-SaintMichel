@@ -17,19 +17,12 @@ class IntermediaireSeeder extends Seeder
         DB::table('intermediaires')->insert([
             [
                 'nom' => 'Local',
-    
-
-
             ],
             [
                 'nom' => 'Classe',
-
-
-
             ],
             [
                 'nom' => 'Sanitaire',
-     
             ],
         ]);
     }
